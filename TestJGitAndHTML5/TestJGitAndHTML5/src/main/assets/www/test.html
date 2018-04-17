@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+
+<html>
+	<head>
+	</head>
+	
+	<body>
+	
+		<p id="p">
+			"Hello HTML!"
+			&#x4fff; //Chinese character
+		</p>
+		
+		<input type="button" value="Say hello" onClick="showAndroidToast('Hello Android!')" />
+		<input type="button" value="Say hello" onClick="setVar('abcd')" />
+		
+		<script type="text/javascript">
+		    
+			var x = "Hello";
+		    
+		    function showAndroidToast(toast) {
+		        //console.log("showAndroidToast() called");//doesn't work - enable using WebChromeClient
+		        Android.showToast(toast);//works
+		        document.getElementsByTagName('body')[0].style.color = 'red';//works
+		    }
+		    
+		    function setVar(x) {
+		        Android.setVar(x);
+		        document.getElementById("p").innerHTML=x;
+		    }
+		    
+		    function hello() {
+		    	alert("hi there");
+		    }
+		    
+		    	
+		</script>
+		
+	</body>
+</html>

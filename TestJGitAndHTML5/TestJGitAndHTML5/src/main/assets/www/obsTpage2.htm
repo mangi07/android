@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<!-- saved from url=(0044)http://www.leapinglaptop.com/door43/pg2.html -->
+<html><object type="{0C55C096-0F1D-4F28-AAA2-85EF591126E7}" cotype="cs" id="cosymantecbfw" style="width: 100%; height: 0px; display: block; position: absolute; z-index:99999;"></object><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <title>Open Bible Stories Translation</title>
+        
+        <!--
+        <link rel="stylesheet" href="//ajax.googleapis.com/ajax/libs/jquerymobile/1.4.1/jquery.mobile.min.css" /
+        <link rel="stylesheet" href="//ajax.googleapis.com/ajax/libs/jqueryui/1.10.4/themes/smoothness/jquery-ui.css" />
+        -->
+        
+		<link rel="stylesheet" href="css/jquery.mobile.min.css">
+		<link rel="stylesheet" href="css/bootstrap.css">
+		<link rel="stylesheet" href="css/bootstrap-responsive.css">
+		<link rel="stylesheet" href="css/btapp.css">
+		<!--
+		<link href="http://www.leapinglaptop.com/door43/docs/assets/css/bootstrap.css" rel="stylesheet">
+        <link href="http://www.leapinglaptop.com/door43/docs/assets/css/bootstrap-responsive.css" rel="stylesheet">
+        <link rel="stylesheet" href="http://www.leapinglaptop.com/door43/docs/assets/css/btapp.css">
+        -->
+		<script src="scripts/logic/data.js"></script>
+        <!--
+        <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+      
+        <script src="//ajax.googleapis.com/ajax/libs/jquerymobile/1.4.1/jquery.mobile.min.js"></script>
+        
+        <script src="//ajax.googleapis.com/ajax/libs/jqueryui/1.10.4/jquery-ui.min.js"></script>
+        -->
+    <script type="text/javascript" id="cosymantecbfw_resize">var kvcPushDownExceptions = {};									var retryCSSHack = 0;									var isUrlExcepted = function() {										if(!window.location || !kvcPushDownExceptions) {											return false;										}										var path = kvcPushDownExceptions[window.location.host];										if(!path) {											return false; 										}										var patt = new RegExp(path);										return patt.test(window.location.pathname);									};									document.addEventListener("initializeExceptionListEvent", function(e) {										if(!e || !e.detail) { 											return; 										} 										kvcPushDownExceptions = e.detail;									}, false);									var coAdjustToolbarHeight = function(h) { 									var e = document.getElementById("cosymantecbfw"); 									if(e) { 										var nOldHeight = 0;										if(window.getComputedStyle(e,null)) {											var height = window.getComputedStyle(e,null).getPropertyValue("height");											var oldHeight = height.replace("px", "");											nOldHeight = Number(oldHeight);											if(!isNaN(nOldHeight)) {												nOldHeight = 0;											}										}										if(document.readyState === "complete") {											applyCSSHack(nOldHeight, h);										} else {											window.addEventListener("onload", applyCSSHack(nOldHeight, h), false);										}										e.style.height = h + "px";										e.style.left = window.pageXOffset + "px";									}								};							var arrayElements = new Array();							var applyCSSHack = function( oldHeight, newHeight) {									if(isUrlExcepted()) {										return;									}									if(!document.body) {										if(retryCSSHack++ < 30) {											setTimeout(function() { applyCSSHack(oldHeight, newHeight); }, 100);										}										return;									}									arrayElements = new Array();									if(document.body.style) {										document.body.style.position = "relative";										var len = newHeight + "px";										document.body.style.setProperty("margin-top", len, "important");                                        document.body.style.setProperty("border", "1px solid transparent", "important");									}									walk(document.body);									for(var i = 0; i < arrayElements.length; i++) {										var elem = arrayElements[i];										if(null == window.getComputedStyle(elem,null)) {											continue;										}										var pos = window.getComputedStyle(elem,null).getPropertyValue("position");										if(pos !== "fixed") {											continue;										}										if(elem.parentNode == document.body) {											elem.style.position = "absolute";											continue;										}										var oldTop = window.getComputedStyle(elem,null).getPropertyValue("top");										oldTop = oldTop.replace("px", "");										var nOldTop = Number(oldTop);										if(!isNaN(nOldTop)) {											nOldTop = 0;										}										var top = nOldTop + (Number(newHeight) - Number(oldHeight));										if(elem.style) {											elem.style.top = top + "px";										}									}								};							var walk = function (elm) {								if(window.getComputedStyle(elm,null) && "auto" !== window.getComputedStyle(elm,null).getPropertyValue("top")) {									arrayElements.push(elm);								}								var node;								for (node = elm.firstChild; node; node = node.nextSibling) {									if (node.nodeType === 1) {										walk(node);									}								}							};</script><script type="text/javascript" id="waxCS">var WAX = function () { var _arrInputs; return { getElement: function (i) { return _arrInputs[i]; }, setElement: function(i){ _arrInputs=i; } } }(); function waxGetElement(i) { return WAX.getElement(i); } function coSetPageData(t, d){ if('wax'==t) { WAX.setElement(d);} }</script></head>
+    <body>
+        
+        <div class="container">
+            
+                <div class="kinda_center">
+                
+                        <div class="hero-unit text-center">
+                            <h2>Open Bible Stories Translation App</h2><br>
+                             <div class="row-fluid">
+                                 <!--Add one function that takes language chosen and sets a variable-->
+                                    <div class="btn-group">
+                                        <a id="from" class="btn btn-large btn-primary" href="">Translate From: English</a>
+                                        <a class="btn btn-large btn-primary dropdown-toggle" data-toggle="dropdown" href=""><span class="caret"></span></a>
+                                        <ul class="dropdown-menu">
+                                          <li id="en" onclick="setLang('from','en');"><i></i> English(en)</li>
+										  <!--Assyrian (aii) is written right to left-->
+                                          <li id="aii" onclick="setLang('from','aii');"><i></i> ܐܬܘܪܝܐ ܣܘܪܝܝܐ (aii)</li>
+                                          <li id= "de" onclick="setLang('from','de');"><i></i> Deutsch(de)</li>
+                                        </ul>
+                                     </div>
+                                    
+                                 <div style="clear:both;"></div>
+                                 <br>
+                                 <div class="btn-group">
+                                        <a id="to" class="btn btn-large btn-primary" href="">Translate To: English&nbsp;&nbsp;&nbsp;&nbsp;</a>
+                                        <a class="btn btn-large btn-primary dropdown-toggle" data-toggle="dropdown" href=""><span class="caret"></span></a>
+                                        <ul class="dropdown-menu">
+                                          <li onclick="setLang('to','en');"><i></i> English(en)</li>
+                                          <!--Assyrian (aii) is written right to left-->
+										  <li onclick="setLang('to','aii');"><i></i> ܐܬܘܪܝܐ ܣܘܪܝܝܐ (aii)</li>
+                                          <li onclick="setLang('to','de');"><i></i> Deutsch(de)</li>
+                                        </ul>
+                                  </div>
+                                 
+                                  <div style="clear:both;"></div>
+                                  <br>
+
+                                  <a class="btn btn-large btn-primary btn-inverse" href="obsTpage3.htm">Start Project</a>
+								  
+                             </div>
+                            
+                            
+                            
+                            
+                            <!--
+                            <div class="row">
+                                <div class="span2"></div>
+                                <div class="btn-group btn-block span3">
+                                    <a class="btn btn-large btn-primary" href="#">Translate From:</a>
+                                    <a class="btn btn-large btn-primary dropdown-toggle" data-toggle="dropdown" href="#"><span class="caret"></span></a>
+                                    <ul class="dropdown-menu">
+                                      <li><a href="#"><i></i> English(en)</a></li>
+                                      <li><a href="#"><i></i> ܐܬܘܪܝܐ ܣܘܪܝܝܐ</a></li>
+                                      <li><a href="#"><i></i> Deutsch(de)</a></li>
+                                    </ul>
+
+
+                                 </div>
+
+                                 <div class="btn-group btn-block span3">
+                                    <a class="btn btn-large btn-primary" style="margin-left: 40%;" href="#">Translate To:</a>
+                                    <a class="btn btn-large btn-primary dropdown-toggle" data-toggle="dropdown" href="#"><span class="caret"></span></a>
+                                    <ul class="dropdown-menu">
+                                      <li><a href="#"><i></i> English(en)</a></li>
+                                      <li><a href="#"><i></i> ܐܬܘܪܝܐ ܣܘܪܝܝܐ</a></li>
+                                      <li><a href="#"><i></i> Deutsch(de)</a></li>
+                                    </ul>
+                                 </div>
+                            </div>
+                            -->
+                             
+                      
+                        </div>
+                </div>
+           
+        </div>
+        <!-- Le javascript
+        ================================================== -->
+        <!-- Placed at the end of the document so the pages load faster -->
+        <script src="scripts/jquery.js"></script>
+        <script src="scripts/bootstrap-transition.js"></script>
+        <script src="scripts/bootstrap-alert.js"></script>
+        <script src="scripts/bootstrap-modal.js"></script>
+        <script src="scripts/bootstrap-dropdown.js"></script>
+        <script src="scripts/bootstrap-scrollspy.js"></script>
+        <script src="scripts/bootstrap-tab.js"></script>
+        <script src="scripts/bootstrap-tooltip.js"></script>
+        <script src="scripts/bootstrap-popover.js"></script>
+        <script src="scripts/bootstrap-button.js"></script>
+        <script src="scripts/bootstrap-collapse.js"></script>
+        <script src="scripts/bootstrap-carousel.js"></script>
+        <script src="scripts/bootstrap-typeahead.js"></script>
+    
+
+</body></html>

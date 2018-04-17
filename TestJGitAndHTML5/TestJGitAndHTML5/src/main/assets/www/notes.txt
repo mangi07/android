@@ -1,0 +1,8 @@
+
+Notes:
+
+create Java methods to persist to-from preferences in json and retrieve
+	when application starts
+bind JavaScript functions for obsTpage2.htm lines 43-45 and 55-57
+	to those functions
+	

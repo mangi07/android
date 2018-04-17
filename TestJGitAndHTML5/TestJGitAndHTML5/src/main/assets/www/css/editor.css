@@ -1,0 +1,27 @@
+#source
+{
+	width:48%;
+	padding:5px;
+	position:absolute;
+	background-color:yellow;
+}
+
+
+#translation-notes
+{
+	padding:5px;
+}
+
+#translation
+{
+	width:48%;
+	float:right;
+	padding:5px;
+	background-color:brown;
+}
+/*
+#debug
+{
+	background-color:green;
+}
+*/

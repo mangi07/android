@@ -1,0 +1,27 @@
+@JavascriptInterface	
+    public String setToFromLang(String toOrFrom, String lang) {
+    	File file = new File(mContext.getFilesDir(), "preferences.txt");
+    	String filename = "preferences.txt";
+    	String string = lang;
+    	String debugMsg = " read from file";
+    	FileOutputStream outputStream;
+
+    	String temp="";
+    	try {
+    	  outputStream = mContext.openFileOutput(filename, Context.MODE_PRIVATE);
+    	  outputStream.write(string.getBytes());
+    	  outputStream.write(debugMsg.getBytes());
+    	  outputStream.close();
+      	  FileInputStream fin = mContext.openFileInput(filename);
+      	  int c;
+      	  while( (c = fin.read()) != -1){
+      	   temp = temp + Character.toString((char)c);
+      	  }
+      	  //string temp contains all the data of the file.
+      	  fin.close();
+    	} catch (Exception e) {
+    	  e.printStackTrace();
+    	}
+    	return "Android.setToFromLang() works: " + temp;
+    	
+    }
