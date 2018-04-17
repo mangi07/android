@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingLeft="16dp"
+    android:paddingRight="16dp"
+    android:paddingTop="16dp">
+
+
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:paddingLeft="16dp"
+        android:paddingRight="16dp"
+        android:paddingTop="16dp">
+
+
+        <ImageView
+            android:id="@+id/topLeft"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:adjustViewBounds="true"
+            android:src="@drawable/stick_figure" />
+
+        <ImageView
+            android:id="@+id/topLeft2"
+            android:layout_width="wrap_content"
+            android:layout_height="100dp"
+            android:adjustViewBounds="true"
+            android:paddingTop="16dp"
+            android:layout_below="@id/topLeft"
+            android:layout_alignLeft="@id/topLeft2"
+            android:src="@drawable/clouds" />
+
+        <ImageView
+            android:id="@+id/topRight"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:adjustViewBounds="true"
+            android:paddingLeft="16dp"
+            android:layout_toRightOf="@id/topLeft"
+            android:src="@drawable/waterfall" />
+
+        <ImageView
+            android:id="@+id/topRight2"
+            android:layout_width="500dp"
+            android:layout_height="wrap_content"
+            android:adjustViewBounds="true"
+            android:paddingLeft="16dp"
+            android:paddingTop="16dp"
+            android:layout_toRightOf="@id/topLeft"
+            android:layout_below="@id/topRight"
+            android:src="@drawable/storm" />
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/topRight2"
+            android:adjustViewBounds="true"
+            android:paddingTop="16dp"
+            android:src="@drawable/forest_fire" />
+
+    </RelativeLayout>
+</ScrollView>

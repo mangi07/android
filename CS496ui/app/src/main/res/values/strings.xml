@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">CS 496 UI: Gallery</string>
+    <string name="text1">Choose Image</string>
+    <string name="text2">Horizontal</string>
+    <string name="text3">Grid</string>
+    <string name="text4">Relative Layout</string>
+    <string name="text5">Better Layout</string>
+    <string name="choosePic">Choose a picture</string>
+    <string name="noPics">No Pic Found</string>
+    <string name="defaultPicName">(Pic Name)</string>
+</resources>
